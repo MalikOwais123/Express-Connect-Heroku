@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <h1>Welcome to Home!!</h1>
+
+    <h1>What is the color of the Sky!</h1>
+    <form action="/result" method="POST"></form>
+    <input type="text" name="color">
+    <button>Submit</button>
+
+    <!-- Something dynamic with ejs -->
+    <!-- 1-> = means is ejs is output you can add javascript in it as well -->
+    <% if (isRaining) { %>
+        <p>It is Raining</p>
+        <%}else {%>
+            <p>It is Not Raining</p>
+            <%} %>
+
+
+    <% pets.forEach((pet)=>{%>
+        <li><%= pet.name %> (<%= pet.species%>)</li>
+    <%})%>
+
+</body>
+
+</html>
