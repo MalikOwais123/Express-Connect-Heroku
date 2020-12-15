@@ -56,4 +56,4 @@ app.get("/api/pets",(req,res)=>{
 
 
 // making the localHost evironment
-app.listen(3000);
+app.listen( process.env.PORT || 3000); // used heroku port or local 
